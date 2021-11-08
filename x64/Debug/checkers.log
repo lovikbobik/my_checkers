@@ -1,0 +1,7 @@
+﻿  main.cpp
+  state.cpp
+C:\Users\goul\Desktop\checkers-master\checkers\checkers\state.cpp(109,43): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+  turn.cpp
+C:\Users\goul\Desktop\checkers-master\checkers\checkers\turn.cpp(27,35): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+  Создание кода...
+  checkers.vcxproj -> C:\Users\goul\Desktop\checkers-master\checkers\x64\Debug\checkers.exe
