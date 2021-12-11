@@ -1,45 +1,47 @@
 #include <iostream>
-#include "game.h"
+#include "./Board/Board.h"
 
 using namespace std;
 
 int main() {
-    Game *game = new Game();
-    Motion *motion = new Motion();
 
-    cout << "####################################################################" << endl;
-    cout << endl;
-    cout << "Welcome to checkers!" << endl;
-    cout << "Instructions: enter the coordinates of the selected checker," << endl;
-    cout << "then the coordinates of the cell where you want to go."<< endl;
-    cout << "Example command: b3 c4" << endl;
-    cout << endl;
-    cout << "I wish you an enjoyable hunger games!"<< endl;
-    cout << "####################################################################" << endl;
+    Board *board = Board::GetBoardPointer();
+    board->initialize();
 
-    while (true) {
-        game->createListOfValidMotion();
-        game->drawBoard();
-        char player = game->get_player();
-        int winner_code = game->get_winner();
 
-        if (winner_code > 0) {
-            cout << "\n-- player " << player << " wins\n" << endl;
-            return winner_code;
-        }
+    while (board->checkWinCondition() != true) {
 
-        cout << "\nplayer '" << player << "': ";
-        cin.clear();
-        cin.getline(motion->data(), Motion::data_len);
+        cout << "####################################################################" << endl;
         cout << endl;
+        cout << "Welcome to checkers!" << endl;
+        cout << "Instructions: enter the coordinates of the selected checker," << endl;
+        cout << "then the coordinates of the cell where you want to go." << endl;
+        cout << "Example command: b3 c4" << endl;
+        cout << endl;
+        cout << "I wish you an enjoyable hunger games!" << endl;
+        cout << "####################################################################" << endl;
 
-        if (game->isCheckMathingValidMotion(motion)) {
-            motion->inputCoords();
-            game->shiftPawn(motion);
-            game->setNextPlayer();
-        } else {
-            cout << "-- invalid motion\n" << endl;
-            game->setInvalidMotion();
-        }
+        cout << "Score for white: " << 12 - board->getBlackCounter() << endl;
+        cout << "Score for black: " << 12 - board->getWhiteCounter() << endl << endl;
+
+        board->printBoard();
+        int oldY, newY;
+        char oldX, newX;
+
+        cout << endl;
+        if (board->getPlayerTurn() == -1) { cout << endl << "Turn: WHITE" << endl; }
+        else { cout << endl << "Turn: BLACK" << endl; }
+
+
+        cout << "Pick your piece (number letter): " << endl;
+        cin >> oldY;
+        cin >> oldX;
+
+        cout << "Pick your move (number letter): " << endl;
+        cin >> newY;
+        cin >> newX;
+
+        board->tryMove(oldY, oldX, newY, newX);
     }
+    return 0;
 }
