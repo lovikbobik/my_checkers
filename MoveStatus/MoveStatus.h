@@ -8,7 +8,7 @@ enum MoveType {
 
 class Piece;
 
-class MoveUtil {
+class MoveStatus {
 private:
     MoveType type;
 public:
@@ -21,8 +21,8 @@ private:
 public:
     Piece *getPiece() const;
 
-    MoveUtil(MoveType type);
+    MoveStatus(MoveType type);
 
-    MoveUtil(MoveType type, Piece *piece);
+    MoveStatus(MoveType type, Piece *piece);
 };
 

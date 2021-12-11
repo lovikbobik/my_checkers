@@ -16,7 +16,7 @@ int main() {
         cout << "Welcome to checkers!" << endl;
         cout << "Instructions: enter the coordinates of the selected checker," << endl;
         cout << "then the coordinates of the cell where you want to go." << endl;
-        cout << "Example command: b3 c4" << endl;
+        cout << "Example command: 6 A and then: 5 B" << endl;
         cout << endl;
         cout << "I wish you an enjoyable hunger games!" << endl;
         cout << "####################################################################" << endl;

@@ -37,7 +37,7 @@
 					<Add directory="C:/Users/drano/Downloads/checkers/checkers/Board"/>
 					<Add directory="C:/Users/drano/Downloads/checkers/checkers/Figures"/>
 					<Add directory="C:/Users/drano/Downloads/checkers/checkers/Pieces"/>
-					<Add directory="C:/Users/drano/Downloads/checkers/checkers/Util"/>
+					<Add directory="C:/Users/drano/Downloads/checkers/checkers/MoveStatus"/>
 					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
 					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
 					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
@@ -62,7 +62,7 @@
 					<Add directory="C:/Users/drano/Downloads/checkers/checkers/Board"/>
 					<Add directory="C:/Users/drano/Downloads/checkers/checkers/Figures"/>
 					<Add directory="C:/Users/drano/Downloads/checkers/checkers/Pieces"/>
-					<Add directory="C:/Users/drano/Downloads/checkers/checkers/Util"/>
+					<Add directory="C:/Users/drano/Downloads/checkers/checkers/MoveStatus"/>
 					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
 					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
 					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
@@ -106,6 +106,12 @@
 		<Unit filename="C:/Users/drano/Downloads/checkers/checkers/Figures/Queen.h">
 			<Option target="checkers"/>
 		</Unit>
+		<Unit filename="C:/Users/drano/Downloads/checkers/checkers/MoveStatus/MoveStatus.cpp">
+			<Option target="checkers"/>
+		</Unit>
+		<Unit filename="C:/Users/drano/Downloads/checkers/checkers/MoveStatus/MoveStatus.h">
+			<Option target="checkers"/>
+		</Unit>
 		<Unit filename="C:/Users/drano/Downloads/checkers/checkers/Pieces/Piece.cpp">
 			<Option target="checkers"/>
 		</Unit>
@@ -116,12 +122,6 @@
 			<Option target="checkers"/>
 		</Unit>
 		<Unit filename="C:/Users/drano/Downloads/checkers/checkers/Pieces/Square.h">
-			<Option target="checkers"/>
-		</Unit>
-		<Unit filename="C:/Users/drano/Downloads/checkers/checkers/Util/MoveUtil.cpp">
-			<Option target="checkers"/>
-		</Unit>
-		<Unit filename="C:/Users/drano/Downloads/checkers/checkers/Util/MoveUtil.h">
 			<Option target="checkers"/>
 		</Unit>
 		<Unit filename="C:/Users/drano/Downloads/checkers/checkers/main.cpp">

@@ -13,8 +13,12 @@ Piece.h
 ../Figures/Queen.h
 Piece.h
 -
-MoveUtil.h
-../Figures/MoveUtil.h
+MoveStatus.h
+../Figures/MoveStatus.h
+
+../MoveStatus/MoveStatus.h
+../Pieces/Piece.h
+../Pieces/Piece.h
 
 ../Pieces/Piece.h
 vector
@@ -24,10 +28,6 @@ Square.h
 
 ../Pieces/Square.h
 Piece.h
-../Pieces/Piece.h
-
-../Util/MoveUtil.h
-../Pieces/Piece.h
 ../Pieces/Piece.h
 
 C:/Users/drano/Downloads/checkers/checkers/Board/Board.cpp

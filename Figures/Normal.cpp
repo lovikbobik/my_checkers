@@ -1,12 +1,12 @@
 #include "Normal.h"
 #include <iostream>
-#include "MoveUtil.h"
+#include "MoveStatus.h"
 
 Normal::~Normal() {
 
 }
 
-MoveUtil Normal::move(std::vector<std::vector<Square>> boardFields, int new_y, int new_x) {
+MoveStatus Normal::move(std::vector<std::vector<Square>> boardFields, int new_y, int new_x) {
     if (boardFields[new_y][new_x].hasPiece() || (new_y + new_x) % 2 == 0) {
         return {NONE};
     }

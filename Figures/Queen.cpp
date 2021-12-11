@@ -12,7 +12,7 @@ void Queen::print() {
         std::cout << "B ";
 }
 
-MoveUtil Queen::move(std::vector<std::vector<Square>> boardFields, int newY, int newX) {
+MoveStatus Queen::move(std::vector<std::vector<Square>> boardFields, int newY, int newX) {
 
     if (boardFields[newY][newX].hasPiece() || (newX + newY) % 2 == 0) {
         return {NONE};

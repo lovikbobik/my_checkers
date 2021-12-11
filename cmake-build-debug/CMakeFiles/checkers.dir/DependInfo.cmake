@@ -11,9 +11,9 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/drano/Downloads/checkers/checkers/Board/Board.cpp" "C:/Users/drano/Downloads/checkers/checkers/cmake-build-debug/CMakeFiles/checkers.dir/Board/Board.cpp.obj"
   "C:/Users/drano/Downloads/checkers/checkers/Figures/Normal.cpp" "C:/Users/drano/Downloads/checkers/checkers/cmake-build-debug/CMakeFiles/checkers.dir/Figures/Normal.cpp.obj"
   "C:/Users/drano/Downloads/checkers/checkers/Figures/Queen.cpp" "C:/Users/drano/Downloads/checkers/checkers/cmake-build-debug/CMakeFiles/checkers.dir/Figures/Queen.cpp.obj"
+  "C:/Users/drano/Downloads/checkers/checkers/MoveStatus/MoveStatus.cpp" "C:/Users/drano/Downloads/checkers/checkers/cmake-build-debug/CMakeFiles/checkers.dir/MoveStatus/MoveStatus.cpp.obj"
   "C:/Users/drano/Downloads/checkers/checkers/Pieces/Piece.cpp" "C:/Users/drano/Downloads/checkers/checkers/cmake-build-debug/CMakeFiles/checkers.dir/Pieces/Piece.cpp.obj"
   "C:/Users/drano/Downloads/checkers/checkers/Pieces/Square.cpp" "C:/Users/drano/Downloads/checkers/checkers/cmake-build-debug/CMakeFiles/checkers.dir/Pieces/Square.cpp.obj"
-  "C:/Users/drano/Downloads/checkers/checkers/Util/MoveUtil.cpp" "C:/Users/drano/Downloads/checkers/checkers/cmake-build-debug/CMakeFiles/checkers.dir/Util/MoveUtil.cpp.obj"
   "C:/Users/drano/Downloads/checkers/checkers/main.cpp" "C:/Users/drano/Downloads/checkers/checkers/cmake-build-debug/CMakeFiles/checkers.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
@@ -23,7 +23,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../Board"
   "../Figures"
   "../Pieces"
-  "../Util"
+  "../MoveStatus"
   )
 
 # The set of dependency files which are needed:

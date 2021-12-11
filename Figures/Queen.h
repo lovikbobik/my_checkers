@@ -1,14 +1,14 @@
 #pragma once
 
 #include <Piece.h>
-#include "MoveUtil.h"
+#include "MoveStatus.h"
 
 class Queen : public Piece {
     using Piece::Piece;
 
 public:
     ~Queen();
-    MoveUtil move(std::vector<std::vector<Square>> array, int newY, int newX) override;
+    MoveStatus move(std::vector<std::vector<Square>> array, int newY, int newX) override;
     void print() override;
 
 private:

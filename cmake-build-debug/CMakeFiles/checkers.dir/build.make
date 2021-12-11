@@ -135,19 +135,19 @@ CMakeFiles/checkers.dir/Pieces/Square.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/checkers.dir/Pieces/Square.cpp.s"
 	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\drano\Downloads\checkers\checkers\Pieces\Square.cpp -o CMakeFiles\checkers.dir\Pieces\Square.cpp.s
 
-CMakeFiles/checkers.dir/Util/MoveUtil.cpp.obj: CMakeFiles/checkers.dir/flags.make
-CMakeFiles/checkers.dir/Util/MoveUtil.cpp.obj: CMakeFiles/checkers.dir/includes_CXX.rsp
-CMakeFiles/checkers.dir/Util/MoveUtil.cpp.obj: ../Util/MoveUtil.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\drano\Downloads\checkers\checkers\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/checkers.dir/Util/MoveUtil.cpp.obj"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\checkers.dir\Util\MoveUtil.cpp.obj -c C:\Users\drano\Downloads\checkers\checkers\Util\MoveUtil.cpp
+CMakeFiles/checkers.dir/MoveStatus/MoveStatus.cpp.obj: CMakeFiles/checkers.dir/flags.make
+CMakeFiles/checkers.dir/MoveStatus/MoveStatus.cpp.obj: CMakeFiles/checkers.dir/includes_CXX.rsp
+CMakeFiles/checkers.dir/MoveStatus/MoveStatus.cpp.obj: ../MoveStatus/MoveStatus.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\drano\Downloads\checkers\checkers\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/checkers.dir/MoveStatus/MoveStatus.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\checkers.dir\MoveStatus\MoveStatus.cpp.obj -c C:\Users\drano\Downloads\checkers\checkers\MoveStatus\MoveStatus.cpp
 
-CMakeFiles/checkers.dir/Util/MoveUtil.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/checkers.dir/Util/MoveUtil.cpp.i"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\drano\Downloads\checkers\checkers\Util\MoveUtil.cpp > CMakeFiles\checkers.dir\Util\MoveUtil.cpp.i
+CMakeFiles/checkers.dir/MoveStatus/MoveStatus.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/checkers.dir/MoveStatus/MoveStatus.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\drano\Downloads\checkers\checkers\MoveStatus\MoveStatus.cpp > CMakeFiles\checkers.dir\MoveStatus\MoveStatus.cpp.i
 
-CMakeFiles/checkers.dir/Util/MoveUtil.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/checkers.dir/Util/MoveUtil.cpp.s"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\drano\Downloads\checkers\checkers\Util\MoveUtil.cpp -o CMakeFiles\checkers.dir\Util\MoveUtil.cpp.s
+CMakeFiles/checkers.dir/MoveStatus/MoveStatus.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/checkers.dir/MoveStatus/MoveStatus.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\drano\Downloads\checkers\checkers\MoveStatus\MoveStatus.cpp -o CMakeFiles\checkers.dir\MoveStatus\MoveStatus.cpp.s
 
 CMakeFiles/checkers.dir/main.cpp.obj: CMakeFiles/checkers.dir/flags.make
 CMakeFiles/checkers.dir/main.cpp.obj: CMakeFiles/checkers.dir/includes_CXX.rsp
@@ -170,7 +170,7 @@ checkers_OBJECTS = \
 "CMakeFiles/checkers.dir/Figures/Queen.cpp.obj" \
 "CMakeFiles/checkers.dir/Pieces/Piece.cpp.obj" \
 "CMakeFiles/checkers.dir/Pieces/Square.cpp.obj" \
-"CMakeFiles/checkers.dir/Util/MoveUtil.cpp.obj" \
+"CMakeFiles/checkers.dir/MoveStatus/MoveStatus.cpp.obj" \
 "CMakeFiles/checkers.dir/main.cpp.obj"
 
 # External object files for target checkers
@@ -181,7 +181,7 @@ checkers.exe: CMakeFiles/checkers.dir/Figures/Normal.cpp.obj
 checkers.exe: CMakeFiles/checkers.dir/Figures/Queen.cpp.obj
 checkers.exe: CMakeFiles/checkers.dir/Pieces/Piece.cpp.obj
 checkers.exe: CMakeFiles/checkers.dir/Pieces/Square.cpp.obj
-checkers.exe: CMakeFiles/checkers.dir/Util/MoveUtil.cpp.obj
+checkers.exe: CMakeFiles/checkers.dir/MoveStatus/MoveStatus.cpp.obj
 checkers.exe: CMakeFiles/checkers.dir/main.cpp.obj
 checkers.exe: CMakeFiles/checkers.dir/build.make
 checkers.exe: CMakeFiles/checkers.dir/linklibs.rsp

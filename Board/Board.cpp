@@ -23,7 +23,7 @@ void Board::initialize() {
     for (int y = 5; y < 8; y++) {
         for (int x = 0; x < 8; x++) {
             if ((y + x) % 2) {
-                this->boardFields[y][x].setPiece(new Queen(y, x, Color(-1)));
+                this->boardFields[y][x].setPiece(new Normal(y, x, Color(-1)));
                 this->whiteCounter++;
             }
         }
@@ -79,7 +79,7 @@ void Board::tryMove(int old_number, char old_letter, int new_number, char new_le
         ++j;
     }
 
-    MoveUtil turn = NONE;
+    MoveStatus turn = NONE;
 
     if (boardFields[oldY][oldX].hasPiece() && !boardFields[newY][newX].hasPiece() &&
         playerTurn == boardFields[oldY][oldX].getPiece()->getColor()) {

@@ -6,7 +6,7 @@ set(CMAKE_CXX_STANDARD 14)
 include_directories(Board)
 include_directories(Figures)
 include_directories(Pieces)
-include_directories(Util)
+include_directories(MoveStatus)
 
 add_executable(checkers
         Board/Board.cpp
@@ -19,6 +19,6 @@ add_executable(checkers
         Pieces/Piece.h
         Pieces/Square.cpp
         Pieces/Square.h
-        Util/MoveUtil.cpp
-        Util/MoveUtil.h
+        MoveStatus/MoveStatus.cpp
+        MoveStatus/MoveStatus.h
         main.cpp)

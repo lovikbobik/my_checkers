@@ -200,6 +200,30 @@ Figures/Queen.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\checkers.dir\build.make CMakeFiles/checkers.dir/Figures/Queen.cpp.s
 .PHONY : Figures/Queen.cpp.s
 
+MoveStatus/MoveStatus.obj: MoveStatus/MoveStatus.cpp.obj
+.PHONY : MoveStatus/MoveStatus.obj
+
+# target to build an object file
+MoveStatus/MoveStatus.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\checkers.dir\build.make CMakeFiles/checkers.dir/MoveStatus/MoveStatus.cpp.obj
+.PHONY : MoveStatus/MoveStatus.cpp.obj
+
+MoveStatus/MoveStatus.i: MoveStatus/MoveStatus.cpp.i
+.PHONY : MoveStatus/MoveStatus.i
+
+# target to preprocess a source file
+MoveStatus/MoveStatus.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\checkers.dir\build.make CMakeFiles/checkers.dir/MoveStatus/MoveStatus.cpp.i
+.PHONY : MoveStatus/MoveStatus.cpp.i
+
+MoveStatus/MoveStatus.s: MoveStatus/MoveStatus.cpp.s
+.PHONY : MoveStatus/MoveStatus.s
+
+# target to generate assembly for a file
+MoveStatus/MoveStatus.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\checkers.dir\build.make CMakeFiles/checkers.dir/MoveStatus/MoveStatus.cpp.s
+.PHONY : MoveStatus/MoveStatus.cpp.s
+
 Pieces/Piece.obj: Pieces/Piece.cpp.obj
 .PHONY : Pieces/Piece.obj
 
@@ -248,30 +272,6 @@ Pieces/Square.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\checkers.dir\build.make CMakeFiles/checkers.dir/Pieces/Square.cpp.s
 .PHONY : Pieces/Square.cpp.s
 
-Util/MoveUtil.obj: Util/MoveUtil.cpp.obj
-.PHONY : Util/MoveUtil.obj
-
-# target to build an object file
-Util/MoveUtil.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\checkers.dir\build.make CMakeFiles/checkers.dir/Util/MoveUtil.cpp.obj
-.PHONY : Util/MoveUtil.cpp.obj
-
-Util/MoveUtil.i: Util/MoveUtil.cpp.i
-.PHONY : Util/MoveUtil.i
-
-# target to preprocess a source file
-Util/MoveUtil.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\checkers.dir\build.make CMakeFiles/checkers.dir/Util/MoveUtil.cpp.i
-.PHONY : Util/MoveUtil.cpp.i
-
-Util/MoveUtil.s: Util/MoveUtil.cpp.s
-.PHONY : Util/MoveUtil.s
-
-# target to generate assembly for a file
-Util/MoveUtil.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\checkers.dir\build.make CMakeFiles/checkers.dir/Util/MoveUtil.cpp.s
-.PHONY : Util/MoveUtil.cpp.s
-
 main.obj: main.cpp.obj
 .PHONY : main.obj
 
@@ -314,15 +314,15 @@ help:
 	@echo ... Figures/Queen.obj
 	@echo ... Figures/Queen.i
 	@echo ... Figures/Queen.s
+	@echo ... MoveStatus/MoveStatus.obj
+	@echo ... MoveStatus/MoveStatus.i
+	@echo ... MoveStatus/MoveStatus.s
 	@echo ... Pieces/Piece.obj
 	@echo ... Pieces/Piece.i
 	@echo ... Pieces/Piece.s
 	@echo ... Pieces/Square.obj
 	@echo ... Pieces/Square.i
 	@echo ... Pieces/Square.s
-	@echo ... Util/MoveUtil.obj
-	@echo ... Util/MoveUtil.i
-	@echo ... Util/MoveUtil.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

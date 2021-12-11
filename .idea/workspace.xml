@@ -15,32 +15,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d9eb5b9d-9a74-4580-b4f1-5fb8124270ab" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/checkers.vcxproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/checkers.vcxproj.filters" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/checkers.vcxproj.user" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coord.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/game.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/game.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/motions.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/motions.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/x64/Debug/checkers.exe.recipe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/x64/Debug/checkers.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/x64/Debug/checkers.tlog/CL.command.1.tlog" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/x64/Debug/checkers.tlog/CL.read.1.tlog" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/x64/Debug/checkers.tlog/CL.write.1.tlog" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/x64/Debug/checkers.tlog/checkers.lastbuildstate" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/x64/Debug/checkers.tlog/link.command.1.tlog" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/x64/Debug/checkers.tlog/link.read.1.tlog" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/x64/Debug/checkers.tlog/link.write.1.tlog" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/x64/Debug/main.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/x64/Debug/state.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/x64/Debug/turn.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/x64/Debug/vc142.idb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/x64/Debug/vc142.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Board/Board.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Board/Board.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figures/Normal.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Figures/Normal.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figures/Normal.h" beforeDir="false" afterPath="$PROJECT_DIR$/Figures/Normal.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figures/Queen.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Figures/Queen.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figures/Queen.h" beforeDir="false" afterPath="$PROJECT_DIR$/Figures/Queen.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pieces/Piece.h" beforeDir="false" afterPath="$PROJECT_DIR$/Pieces/Piece.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Util/MoveUtil.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/MoveStatus/MoveStatus.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Util/MoveUtil.h" beforeDir="false" afterPath="$PROJECT_DIR$/MoveStatus/MoveStatus.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/checkers.dir/Board/Board.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/checkers.dir/Board/Board.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/checkers.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/checkers.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/checkers.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/checkers.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/checkers.dir/Figures/Normal.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/checkers.dir/Figures/Normal.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/checkers.dir/Figures/Queen.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/checkers.dir/Figures/Queen.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/checkers.dir/Pieces/Piece.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/checkers.dir/Pieces/Piece.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/checkers.dir/Pieces/Square.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/checkers.dir/Pieces/Square.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/checkers.dir/Util/MoveUtil.cpp.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/checkers.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/checkers.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/checkers.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/checkers.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/checkers.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/checkers.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/checkers.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/checkers.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/checkers.dir/includes_CXX.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/checkers.dir/includes_CXX.rsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/checkers.dir/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/checkers.dir/main.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/checkers.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/checkers.dir/objects.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/checkers.dir/objects1.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/checkers.dir/objects1.rsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/checkers.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/checkers.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/checkers.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/checkers.exe" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,11 +112,30 @@
       <workItem from="1636402426190" duration="3171000" />
       <workItem from="1638598992987" duration="5365000" />
       <workItem from="1639184727223" duration="398000" />
-      <workItem from="1639185165157" duration="662000" />
+      <workItem from="1639185165157" duration="3827000" />
     </task>
+    <task id="LOCAL-00001" summary="homework">
+      <created>1639186100603</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1639186100603</updated>
+    </task>
+    <task id="LOCAL-00002" summary="homework">
+      <created>1639186146877</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1639186146877</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="homework" />
+    <option name="LAST_COMMIT_MESSAGE" value="homework" />
   </component>
 </project>

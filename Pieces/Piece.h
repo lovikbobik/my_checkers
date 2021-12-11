@@ -10,7 +10,7 @@ enum Color {
 
 class Square;
 
-class MoveUtil;
+class MoveStatus;
 
 class Piece {
 public:
@@ -30,7 +30,7 @@ public:
 
     int get_X() const;
 
-    virtual MoveUtil move(std::vector<std::vector<Square>>, int, int) = 0;
+    virtual MoveStatus move(std::vector<std::vector<Square>>, int, int) = 0;
 
     virtual void print() = 0;
 

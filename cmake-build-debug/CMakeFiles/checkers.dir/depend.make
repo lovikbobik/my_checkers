@@ -4,23 +4,28 @@
 CMakeFiles/checkers.dir/Board/Board.cpp.obj: \
  ../Figures/Normal.h \
  ../Figures/Queen.h \
+ ../MoveStatus/MoveStatus.h \
  ../Pieces/Piece.h \
  ../Pieces/Square.h \
- ../Util/MoveUtil.h \
  ../Board/Board.cpp \
  ../Board/Board.h
 CMakeFiles/checkers.dir/Figures/Normal.cpp.obj: \
+ ../MoveStatus/MoveStatus.h \
  ../Pieces/Piece.h \
  ../Pieces/Square.h \
- ../Util/MoveUtil.h \
  ../Figures/Normal.cpp \
  ../Figures/Normal.h
 CMakeFiles/checkers.dir/Figures/Queen.cpp.obj: \
+ ../MoveStatus/MoveStatus.h \
  ../Pieces/Piece.h \
  ../Pieces/Square.h \
- ../Util/MoveUtil.h \
  ../Figures/Queen.cpp \
  ../Figures/Queen.h
+CMakeFiles/checkers.dir/MoveStatus/MoveStatus.cpp.obj: \
+ ../MoveStatus/MoveStatus.cpp \
+ ../MoveStatus/MoveStatus.h \
+ ../Pieces/Piece.h \
+ ../Pieces/Square.h
 CMakeFiles/checkers.dir/Pieces/Piece.cpp.obj: \
  ../Pieces/Piece.cpp \
  ../Pieces/Piece.h \
@@ -29,11 +34,6 @@ CMakeFiles/checkers.dir/Pieces/Square.cpp.obj: \
  ../Pieces/Piece.h \
  ../Pieces/Square.cpp \
  ../Pieces/Square.h
-CMakeFiles/checkers.dir/Util/MoveUtil.cpp.obj: \
- ../Pieces/Piece.h \
- ../Pieces/Square.h \
- ../Util/MoveUtil.cpp \
- ../Util/MoveUtil.h
 CMakeFiles/checkers.dir/main.cpp.obj: \
  ../Pieces/Piece.h \
  ../Pieces/Square.h \

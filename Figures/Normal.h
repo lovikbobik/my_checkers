@@ -9,7 +9,7 @@ public:
 
     ~Normal();
 
-    MoveUtil move(std::vector<std::vector<Square>> array, int new_y, int new_x) override;
+    MoveStatus move(std::vector<std::vector<Square>> array, int new_y, int new_x) override;
 
     void print() override;
 };
