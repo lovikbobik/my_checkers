@@ -8,15 +8,15 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/drano/Downloads/checkers/checkers/Board/Board.cpp" "C:/Users/drano/Downloads/checkers/checkers/cmake-build-debug/CMakeFiles/checkers.dir/Board/Board.cpp.obj"
-  "C:/Users/drano/Downloads/checkers/checkers/Figures/Normal.cpp" "C:/Users/drano/Downloads/checkers/checkers/cmake-build-debug/CMakeFiles/checkers.dir/Figures/Normal.cpp.obj"
-  "C:/Users/drano/Downloads/checkers/checkers/Figures/Queen.cpp" "C:/Users/drano/Downloads/checkers/checkers/cmake-build-debug/CMakeFiles/checkers.dir/Figures/Queen.cpp.obj"
-  "C:/Users/drano/Downloads/checkers/checkers/MoveStatus/MoveStatus.cpp" "C:/Users/drano/Downloads/checkers/checkers/cmake-build-debug/CMakeFiles/checkers.dir/MoveStatus/MoveStatus.cpp.obj"
-  "C:/Users/drano/Downloads/checkers/checkers/Pieces/Piece.cpp" "C:/Users/drano/Downloads/checkers/checkers/cmake-build-debug/CMakeFiles/checkers.dir/Pieces/Piece.cpp.obj"
-  "C:/Users/drano/Downloads/checkers/checkers/Pieces/Square.cpp" "C:/Users/drano/Downloads/checkers/checkers/cmake-build-debug/CMakeFiles/checkers.dir/Pieces/Square.cpp.obj"
-  "C:/Users/drano/Downloads/checkers/checkers/main.cpp" "C:/Users/drano/Downloads/checkers/checkers/cmake-build-debug/CMakeFiles/checkers.dir/main.cpp.obj"
+  "C:/Users/goul/Desktop/my_checkers-master/Board/Board.cpp" "C:/Users/goul/Desktop/my_checkers-master/cmake-build-debug/CMakeFiles/checkers.dir/Board/Board.cpp.obj"
+  "C:/Users/goul/Desktop/my_checkers-master/Figures/Checker.cpp" "C:/Users/goul/Desktop/my_checkers-master/cmake-build-debug/CMakeFiles/checkers.dir/Figures/Checker.cpp.obj"
+  "C:/Users/goul/Desktop/my_checkers-master/Figures/Queen.cpp" "C:/Users/goul/Desktop/my_checkers-master/cmake-build-debug/CMakeFiles/checkers.dir/Figures/Queen.cpp.obj"
+  "C:/Users/goul/Desktop/my_checkers-master/MoveStatus/MoveStatus.cpp" "C:/Users/goul/Desktop/my_checkers-master/cmake-build-debug/CMakeFiles/checkers.dir/MoveStatus/MoveStatus.cpp.obj"
+  "C:/Users/goul/Desktop/my_checkers-master/Pieces/Piece.cpp" "C:/Users/goul/Desktop/my_checkers-master/cmake-build-debug/CMakeFiles/checkers.dir/Pieces/Piece.cpp.obj"
+  "C:/Users/goul/Desktop/my_checkers-master/Pieces/Square.cpp" "C:/Users/goul/Desktop/my_checkers-master/cmake-build-debug/CMakeFiles/checkers.dir/Pieces/Square.cpp.obj"
+  "C:/Users/goul/Desktop/my_checkers-master/main.cpp" "C:/Users/goul/Desktop/my_checkers-master/cmake-build-debug/CMakeFiles/checkers.dir/main.cpp.obj"
   )
-set(CMAKE_CXX_COMPILER_ID "GNU")
+set(CMAKE_CXX_COMPILER_ID "MSVC")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH

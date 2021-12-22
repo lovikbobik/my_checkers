@@ -1,33 +1,33 @@
 #include "Piece.h"
 
 Piece::Piece(int y, int x, Color color) {
-    this->x = x;
-    this->y = y;
+    this->_x = x;
+    this->_y = y;
     setColor(color);
 }
 
 int Piece::getColor() const {
-    return this->color;
+    return this->_color;
 }
 
 void Piece::setColor(Color color) {
-    Piece::color = color;
+    Piece::_color = color;
 }
 
-int Piece::get_Y() const {
-    return y;
+int Piece::getY() const {
+    return _y;
 }
 
-int Piece::get_X() const {
-    return x;
+int Piece::getX() const {
+    return _x;
 }
 
 void Piece::setX(int x) {
-    Piece::x = x;
+    Piece::_x = x;
 }
 
 void Piece::setY(int y) {
-    Piece::y = y;
+    Piece::_y = y;
 }
 
 

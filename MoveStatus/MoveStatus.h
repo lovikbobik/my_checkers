@@ -10,14 +10,14 @@ class Piece;
 
 class MoveStatus {
 private:
-    MoveType type;
+    MoveType _type;
 public:
     MoveType getType() const {
-        return type;
+        return _type;
     }
 
 private:
-    Piece *piece{};
+    Piece *_piece{};
 public:
     Piece *getPiece() const;
 

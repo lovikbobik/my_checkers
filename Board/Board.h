@@ -5,11 +5,10 @@
 
 class Board {
 public:
-    static Board *GetBoardPointer();
 
     ~Board() = default;
 
-    void initialize();
+    Board();
 
     void printBoard() const;
 
@@ -24,9 +23,8 @@ public:
     int getPlayerTurn() const;
 
 private:
-    mutable std::vector<std::vector<Square>> boardFields;
-    int blackCounter;
-    int whiteCounter;
-    int playerTurn;
-    static Board *boardPointer;
+    mutable std::vector<std::vector<Square>> _tiles;
+    int _blackCounter;
+    int _whiteCounter;
+    int _playerTurn;
 };

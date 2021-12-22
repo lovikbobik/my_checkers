@@ -5,7 +5,7 @@ void Square::setPiece(Piece *piece) {
     Square::_piece = piece;
 }
 
-Piece *const Square::getPiece() const {
+Piece *Square::getPiece() const {
     return _piece;
 }
 

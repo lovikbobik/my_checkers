@@ -4,130 +4,134 @@
 	<Project>
 		<Option title="checkers"/>
 		<Option makefile_is_custom="1"/>
-		<Option compiler="gcc"/>
+		<Option compiler="msvc8"/>
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="C:/Users/drano/Downloads/checkers/checkers/cmake-build-debug"/>
+				<Option working_dir="C:/Users/goul/Desktop/my_checkers-master/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/drano/Downloads/checkers/checkers/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/drano/Downloads/checkers/checkers/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/drano/Downloads/checkers/checkers/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/drano/Downloads/checkers/checkers/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f C:\Users\goul\Desktop\my_checkers-master\cmake-build-debug\Makefile VERBOSE=1 all"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\goul\Desktop\my_checkers-master\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\goul\Desktop\my_checkers-master\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\goul\Desktop\my_checkers-master\cmake-build-debug\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="C:/Users/drano/Downloads/checkers/checkers/cmake-build-debug"/>
+				<Option working_dir="C:/Users/goul/Desktop/my_checkers-master/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/drano/Downloads/checkers/checkers/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/drano/Downloads/checkers/checkers/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/drano/Downloads/checkers/checkers/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/drano/Downloads/checkers/checkers/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f C:\Users\goul\Desktop\my_checkers-master\cmake-build-debug\Makefile VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\goul\Desktop\my_checkers-master\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\goul\Desktop\my_checkers-master\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\goul\Desktop\my_checkers-master\cmake-build-debug\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="checkers">
-				<Option output="C:/Users/drano/Downloads/checkers/checkers/cmake-build-debug/checkers.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/drano/Downloads/checkers/checkers/cmake-build-debug"/>
+				<Option output="C:/Users/goul/Desktop/my_checkers-master/cmake-build-debug/checkers.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/goul/Desktop/my_checkers-master/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
-				<Option compiler="gcc"/>
+				<Option compiler="msvc8"/>
 				<Compiler>
-					<Add directory="C:/Users/drano/Downloads/checkers/checkers/Board"/>
-					<Add directory="C:/Users/drano/Downloads/checkers/checkers/Figures"/>
-					<Add directory="C:/Users/drano/Downloads/checkers/checkers/Pieces"/>
-					<Add directory="C:/Users/drano/Downloads/checkers/checkers/MoveStatus"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
+					<Add directory="C:/Users/goul/Desktop/my_checkers-master/Board"/>
+					<Add directory="C:/Users/goul/Desktop/my_checkers-master/Figures"/>
+					<Add directory="C:/Users/goul/Desktop/my_checkers-master/Pieces"/>
+					<Add directory="C:/Users/goul/Desktop/my_checkers-master/MoveStatus"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/drano/Downloads/checkers/checkers/cmake-build-debug/Makefile&quot;  VERBOSE=1 checkers"/>
-					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/drano/Downloads/checkers/checkers/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/drano/Downloads/checkers/checkers/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/drano/Downloads/checkers/checkers/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f C:\Users\goul\Desktop\my_checkers-master\cmake-build-debug\Makefile VERBOSE=1 checkers"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\goul\Desktop\my_checkers-master\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\goul\Desktop\my_checkers-master\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\goul\Desktop\my_checkers-master\cmake-build-debug\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="checkers/fast">
-				<Option output="C:/Users/drano/Downloads/checkers/checkers/cmake-build-debug/checkers.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/drano/Downloads/checkers/checkers/cmake-build-debug"/>
+				<Option output="C:/Users/goul/Desktop/my_checkers-master/cmake-build-debug/checkers.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/goul/Desktop/my_checkers-master/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
-				<Option compiler="gcc"/>
+				<Option compiler="msvc8"/>
 				<Compiler>
-					<Add directory="C:/Users/drano/Downloads/checkers/checkers/Board"/>
-					<Add directory="C:/Users/drano/Downloads/checkers/checkers/Figures"/>
-					<Add directory="C:/Users/drano/Downloads/checkers/checkers/Pieces"/>
-					<Add directory="C:/Users/drano/Downloads/checkers/checkers/MoveStatus"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
+					<Add directory="C:/Users/goul/Desktop/my_checkers-master/Board"/>
+					<Add directory="C:/Users/goul/Desktop/my_checkers-master/Figures"/>
+					<Add directory="C:/Users/goul/Desktop/my_checkers-master/Pieces"/>
+					<Add directory="C:/Users/goul/Desktop/my_checkers-master/MoveStatus"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/drano/Downloads/checkers/checkers/cmake-build-debug/Makefile&quot;  VERBOSE=1 checkers/fast"/>
-					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/drano/Downloads/checkers/checkers/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/drano/Downloads/checkers/checkers/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/drano/Downloads/checkers/checkers/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f C:\Users\goul\Desktop\my_checkers-master\cmake-build-debug\Makefile VERBOSE=1 checkers/fast"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\goul\Desktop\my_checkers-master\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\goul\Desktop\my_checkers-master\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\goul\Desktop\my_checkers-master\cmake-build-debug\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="C:/Users/drano/Downloads/checkers/checkers/cmake-build-debug"/>
+				<Option working_dir="C:/Users/goul/Desktop/my_checkers-master/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/drano/Downloads/checkers/checkers/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/drano/Downloads/checkers/checkers/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/drano/Downloads/checkers/checkers/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/drano/Downloads/checkers/checkers/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f C:\Users\goul\Desktop\my_checkers-master\cmake-build-debug\Makefile VERBOSE=1 edit_cache"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\goul\Desktop\my_checkers-master\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\goul\Desktop\my_checkers-master\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\goul\Desktop\my_checkers-master\cmake-build-debug\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/drano/Downloads/checkers/checkers/Board/Board.cpp">
+		<Unit filename="C:/Users/goul/Desktop/my_checkers-master/Board/Board.cpp">
 			<Option target="checkers"/>
 		</Unit>
-		<Unit filename="C:/Users/drano/Downloads/checkers/checkers/Board/Board.h">
+		<Unit filename="C:/Users/goul/Desktop/my_checkers-master/Board/Board.h">
 			<Option target="checkers"/>
 		</Unit>
-		<Unit filename="C:/Users/drano/Downloads/checkers/checkers/Figures/Normal.cpp">
+		<Unit filename="C:/Users/goul/Desktop/my_checkers-master/Figures/Checker.cpp">
 			<Option target="checkers"/>
 		</Unit>
-		<Unit filename="C:/Users/drano/Downloads/checkers/checkers/Figures/Normal.h">
+		<Unit filename="C:/Users/goul/Desktop/my_checkers-master/Figures/Checker.h">
 			<Option target="checkers"/>
 		</Unit>
-		<Unit filename="C:/Users/drano/Downloads/checkers/checkers/Figures/Queen.cpp">
+		<Unit filename="C:/Users/goul/Desktop/my_checkers-master/Figures/Queen.cpp">
 			<Option target="checkers"/>
 		</Unit>
-		<Unit filename="C:/Users/drano/Downloads/checkers/checkers/Figures/Queen.h">
+		<Unit filename="C:/Users/goul/Desktop/my_checkers-master/Figures/Queen.h">
 			<Option target="checkers"/>
 		</Unit>
-		<Unit filename="C:/Users/drano/Downloads/checkers/checkers/MoveStatus/MoveStatus.cpp">
+		<Unit filename="C:/Users/goul/Desktop/my_checkers-master/MoveStatus/MoveStatus.cpp">
 			<Option target="checkers"/>
 		</Unit>
-		<Unit filename="C:/Users/drano/Downloads/checkers/checkers/MoveStatus/MoveStatus.h">
+		<Unit filename="C:/Users/goul/Desktop/my_checkers-master/MoveStatus/MoveStatus.h">
 			<Option target="checkers"/>
 		</Unit>
-		<Unit filename="C:/Users/drano/Downloads/checkers/checkers/Pieces/Piece.cpp">
+		<Unit filename="C:/Users/goul/Desktop/my_checkers-master/Pieces/Piece.cpp">
 			<Option target="checkers"/>
 		</Unit>
-		<Unit filename="C:/Users/drano/Downloads/checkers/checkers/Pieces/Piece.h">
+		<Unit filename="C:/Users/goul/Desktop/my_checkers-master/Pieces/Piece.h">
 			<Option target="checkers"/>
 		</Unit>
-		<Unit filename="C:/Users/drano/Downloads/checkers/checkers/Pieces/Square.cpp">
+		<Unit filename="C:/Users/goul/Desktop/my_checkers-master/Pieces/Square.cpp">
 			<Option target="checkers"/>
 		</Unit>
-		<Unit filename="C:/Users/drano/Downloads/checkers/checkers/Pieces/Square.h">
+		<Unit filename="C:/Users/goul/Desktop/my_checkers-master/Pieces/Square.h">
 			<Option target="checkers"/>
 		</Unit>
-		<Unit filename="C:/Users/drano/Downloads/checkers/checkers/main.cpp">
+		<Unit filename="C:/Users/goul/Desktop/my_checkers-master/main.cpp">
 			<Option target="checkers"/>
 		</Unit>
-		<Unit filename="C:/Users/drano/Downloads/checkers/checkers/CMakeLists.txt">
+		<Unit filename="C:/Users/goul/Desktop/my_checkers-master/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

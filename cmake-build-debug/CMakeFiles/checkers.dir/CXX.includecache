@@ -6,20 +6,6 @@
 
 #IncludeRegexTransform: 
 
-../Figures/Normal.h
-Piece.h
--
-
-../Figures/Queen.h
-Piece.h
--
-MoveStatus.h
-../Figures/MoveStatus.h
-
-../MoveStatus/MoveStatus.h
-../Pieces/Piece.h
-../Pieces/Piece.h
-
 ../Pieces/Piece.h
 vector
 -
@@ -30,25 +16,15 @@ Square.h
 Piece.h
 ../Pieces/Piece.h
 
-C:/Users/drano/Downloads/checkers/checkers/Board/Board.cpp
-Board.h
-C:/Users/drano/Downloads/checkers/checkers/Board/Board.h
-Normal.h
-C:/Users/drano/Downloads/checkers/checkers/Board/Normal.h
-Queen.h
-C:/Users/drano/Downloads/checkers/checkers/Board/Queen.h
-iostream
--
-
-C:/Users/drano/Downloads/checkers/checkers/Board/Board.h
+C:/Users/goul/Desktop/my_checkers-master/Board/Board.h
 vector
 -
 Square.h
-C:/Users/drano/Downloads/checkers/checkers/Board/Square.h
+C:/Users/goul/Desktop/my_checkers-master/Board/Square.h
 
-C:/Users/drano/Downloads/checkers/checkers/main.cpp
+C:/Users/goul/Desktop/my_checkers-master/main.cpp
 iostream
 -
 ./Board/Board.h
-C:/Users/drano/Downloads/checkers/checkers/Board/Board.h
+C:/Users/goul/Desktop/my_checkers-master/Board/Board.h
 

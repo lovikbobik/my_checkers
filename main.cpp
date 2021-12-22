@@ -5,24 +5,20 @@ using namespace std;
 
 int main() {
 
-    Board *board = Board::GetBoardPointer();
-    board->initialize();
+    auto *board = new Board();
 
 
-    while (board->checkWinCondition() != true) {
+    cout << "####################################################################" << endl
+         << endl
+         << "Welcome to checkers!" << endl
+         << "Instructions: enter the coordinates of the selected checker," << endl
+         << "then the coordinates of the cell where you want to go." << endl
+         << "Example command: 6 A and then: 5 B" << endl
+         << endl
+         << "I wish you an enjoyable hunger games!" << endl
+         << "####################################################################" << endl;
 
-        cout << "####################################################################" << endl;
-        cout << endl;
-        cout << "Welcome to checkers!" << endl;
-        cout << "Instructions: enter the coordinates of the selected checker," << endl;
-        cout << "then the coordinates of the cell where you want to go." << endl;
-        cout << "Example command: 6 A and then: 5 B" << endl;
-        cout << endl;
-        cout << "I wish you an enjoyable hunger games!" << endl;
-        cout << "####################################################################" << endl;
-
-        cout << "Score for white: " << 12 - board->getBlackCounter() << endl;
-        cout << "Score for black: " << 12 - board->getWhiteCounter() << endl << endl;
+    while (!board->checkWinCondition()) {
 
         board->printBoard();
         int oldY, newY;
@@ -33,7 +29,7 @@ int main() {
         else { cout << endl << "Turn: BLACK" << endl; }
 
 
-        cout << "Pick your piece (number letter): " << endl;
+        cout << "Pick your _piece (number letter): " << endl;
         cin >> oldY;
         cin >> oldX;
 
