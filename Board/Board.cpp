@@ -1,54 +1,17 @@
 #include "Board.h"
-#include "Normal.h"
+#include "Checker.h"
 #include "Queen.h"
 #include <iostream>
 
 const char row[] = "ABCDEFGH";
 
-Board *Board::boardPointer = nullptr;
-
-void Board::initialize() {
-
-    for (int y = 0; y < 8; y++) {
-        std::vector<Square> v1;
-        for (int x = 0; x < 8; x++) {
-            v1.push_back(Square());
-        }
-        boardFields.push_back(v1);
-    }
-
-    this->whiteCounter = 0;
-    this->blackCounter = 0;
-
-    for (int y = 5; y < 8; y++) {
-        for (int x = 0; x < 8; x++) {
-            if ((y + x) % 2) {
-                this->boardFields[y][x].setPiece(new Normal(y, x, Color(-1)));
-                this->whiteCounter++;
-            }
-        }
-    }
-
-    for (int y = 0; y < 3; y++) {
-        for (int x = 0; x < 8; x++) {
-            if ((y + x) % 2) {
-                this->boardFields[y][x].setPiece(new Normal(y, x, Color(1)));
-                this->blackCounter++;
-            }
-        }
-    }
-
-    playerTurn = -1;
-}
-
-
 void Board::printBoard() const {
     for (int y = 0; y < 8; y++) {
         std::cout << y + 1 << " ";
         for (int x = 0; x < 8; x++) {
-            if (boardFields[y][x].hasPiece())
-                boardFields[y][x].getPiece()->print();
-            else if (!boardFields[y][x].hasPiece() && (x + y) % 2)
+            if (_tiles[y][x].hasPiece())
+                _tiles[y][x].getPiece()->print();
+            else if (!_tiles[y][x].hasPiece() && (x + y) % 2)
                 std::cout << ". ";
             else
                 std::cout << "  ";
@@ -79,59 +42,59 @@ void Board::tryMove(int old_number, char old_letter, int new_number, char new_le
         ++j;
     }
 
-    MoveStatus turn = NONE;
+    MoveStatus moveStatus = NONE;
 
-    if (boardFields[oldY][oldX].hasPiece() && !boardFields[newY][newX].hasPiece() &&
-        playerTurn == boardFields[oldY][oldX].getPiece()->getColor()) {
-        turn = boardFields[oldY][oldX].getPiece()->move(boardFields, newY, newX);
-        if (turn.getType() != NONE) {
-            if (playerTurn == 1)
-                playerTurn = -1;
+    if (_tiles[oldY][oldX].hasPiece() && !_tiles[newY][newX].hasPiece() &&
+        _playerTurn == _tiles[oldY][oldX].getPiece()->getColor()) {
+        moveStatus = _tiles[oldY][oldX].getPiece()->move(_tiles, newY, newX);
+        if (moveStatus.getType() != NONE) {
+            if (_playerTurn == 1)
+                _playerTurn = -1;
             else
-                playerTurn = 1;
+                _playerTurn = 1;
         } else {
             std::cout << "Wrong position!" << std::endl;
         }
     }
 
 
-    switch (turn.getType()) {
+    switch (moveStatus.getType()) {
 
         case NONE:
             break;
         case NORMAL: {
-            Piece *piece = boardFields[oldY][oldX].getPiece();
+            Piece *piece = _tiles[oldY][oldX].getPiece();
             piece->setY(newY);
             piece->setX(newX);
 
             if ((piece->getColor() == 1 && newY == 7) || (piece->getColor() == -1 && newY == 0)) {
                 int color = piece->getColor();
-                boardFields[newY][newX].setPiece(new Queen(newY, newX, Color(color)));
+                _tiles[newY][newX].setPiece(new Queen(newY, newX, Color(color)));
             } else
-                boardFields[newY][newX].setPiece(piece);
+                _tiles[newY][newX].setPiece(piece);
 
-            boardFields[oldY][oldX].setPiece(nullptr);
+            _tiles[oldY][oldX].setPiece(nullptr);
             break;
         }
 
         case KILL:
-            Piece *piece = boardFields[oldY][oldX].getPiece();
+            Piece *piece = _tiles[oldY][oldX].getPiece();
             piece->setY(newY);
             piece->setX(newX);
             if ((piece->getColor() == 1 && newY == 7) || (piece->getColor() == -1 && newY == 0)) {
                 int color = piece->getColor();
-                boardFields[newY][newX].setPiece(new Queen(newY, newX, Color(color)));
+                _tiles[newY][newX].setPiece(new Queen(newY, newX, Color(color)));
             } else
-                boardFields[newY][newX].setPiece(piece);
-            boardFields[oldY][oldX].setPiece(nullptr);
+                _tiles[newY][newX].setPiece(piece);
+            _tiles[oldY][oldX].setPiece(nullptr);
 
-            Piece *otherPiece = turn.getPiece();
-            boardFields[otherPiece->get_Y()][otherPiece->get_X()].setPiece(nullptr);
+            Piece *otherPiece = moveStatus.getPiece();
+            _tiles[otherPiece->getY()][otherPiece->getX()].setPiece(nullptr);
 
             if (piece->getColor() == 1)
-                this->whiteCounter--;
+                this->_whiteCounter--;
             else
-                this->blackCounter--;
+                this->_blackCounter--;
 
             break;
     }
@@ -139,10 +102,10 @@ void Board::tryMove(int old_number, char old_letter, int new_number, char new_le
 
 bool Board::checkWinCondition() const {
 
-    if (blackCounter == 0) {
+    if (_blackCounter == 0) {
         std::cout << "White player wins" << std::endl;
         return true;
-    } else if (whiteCounter == 0) {
+    } else if (_whiteCounter == 0) {
         std::cout << "Black player wins" << std::endl;
         return true;
     } else
@@ -150,21 +113,51 @@ bool Board::checkWinCondition() const {
 
 }
 
-Board *Board::GetBoardPointer() {
-    if (boardPointer == nullptr)
-        boardPointer = new Board();
-
-    return boardPointer;
-}
-
 int Board::getBlackCounter() const {
-    return blackCounter;
+    return _blackCounter;
 }
 
 int Board::getWhiteCounter() const {
-    return whiteCounter;
+    return _whiteCounter;
 }
 
 int Board::getPlayerTurn() const {
-    return playerTurn;
+    return _playerTurn;
 }
+
+Board::Board() {
+
+    for (int y = 0; y < 8; y++) {
+        std::vector<Square> v1;
+        v1.reserve(8);
+        for (int x = 0; x < 8; x++) {
+            v1.emplace_back();
+        }
+        _tiles.push_back(v1);
+    }
+
+    this->_whiteCounter = 0;
+    this->_blackCounter = 0;
+
+    for (int y = 5; y < 8; y++) {
+        for (int x = 0; x < 8; x++) {
+            if ((y + x) % 2) {
+                this->_tiles[y][x].setPiece(new Checker(y, x, Color(-1)));
+                this->_whiteCounter++;
+            }
+        }
+    }
+
+    for (int y = 0; y < 3; y++) {
+        for (int x = 0; x < 8; x++) {
+            if ((y + x) % 2) {
+                this->_tiles[y][x].setPiece(new Checker(y, x, Color(1)));
+                this->_blackCounter++;
+            }
+        }
+    }
+
+    _playerTurn = -1;
+}
+
+

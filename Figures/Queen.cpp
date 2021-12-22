@@ -2,8 +2,7 @@
 #include <iostream>
 
 
-Queen::~Queen() {
-}
+Queen::~Queen() = default;
 
 void Queen::print() {
     if (this->getColor() == Color(-1))
@@ -12,19 +11,19 @@ void Queen::print() {
         std::cout << "B ";
 }
 
-MoveStatus Queen::move(std::vector<std::vector<Square>> boardFields, int newY, int newX) {
+MoveStatus Queen::move(std::vector<std::vector<Square>> tiles, int newY, int newX) {
 
-    if (boardFields[newY][newX].hasPiece() || (newX + newY) % 2 == 0) {
+    if (tiles[newY][newX].hasPiece() || (newX + newY) % 2 == 0) {
         return {NONE};
     }
 
-    int qy = this->get_Y();
-    int qx = this->get_X();
+    int qy = this->getY();
+    int qx = this->getX();
     bool isPieceOnWay = false;
 
     if (abs(newY - qy) == abs(newX - qx)) {
-        Piece *piece = checkDiagonal(boardFields, qy, qx, newY, newX);
-        if (piece != nullptr && piece->getColor() != boardFields[qy][qx].getPiece()->getColor()) {
+        Piece *piece = checkDiagonal(tiles, qy, qx, newY, newX);
+        if (piece != nullptr && piece->getColor() != tiles[qy][qx].getPiece()->getColor()) {
             isPieceOnWay = true;
         }
         if (isPieceOnWay) {
@@ -36,32 +35,32 @@ MoveStatus Queen::move(std::vector<std::vector<Square>> boardFields, int newY, i
 
 }
 
-Piece *Queen::checkDiagonal(std::vector<std::vector<Square>> boardFields, int oldY, int oldX, int newY, int newX) {
+Piece *Queen::checkDiagonal(std::vector<std::vector<Square>> tiles, int oldY, int oldX, int newY, int newX) {
     if (newX - oldX > 0 && newY - oldY < 0) {
         for (int y = oldY - 1, x = oldX + 1; y > newY && x < newX; x++, y--) {
-            if (boardFields[y][x].hasPiece()) {
-                return boardFields[y][x].getPiece();
+            if (tiles[y][x].hasPiece()) {
+                return tiles[y][x].getPiece();
             }
         }
     }
     if (newX - oldX < 0 && newY - oldY > 0) {
         for (int y = oldY + 1, x = oldX - 1; y < newY && x > newX; x--, y++) {
-            if (boardFields[y][x].hasPiece()) {
-                return boardFields[y][x].getPiece();
+            if (tiles[y][x].hasPiece()) {
+                return tiles[y][x].getPiece();
             }
         }
     }
     if (newX - oldX < 0 && newY - oldY < 0) {
         for (int y = oldY - 1, x = oldX - 1; y > newY && x > newX; x--, y--) {
-            if (boardFields[y][x].hasPiece()) {
-                return boardFields[y][x].getPiece();
+            if (tiles[y][x].hasPiece()) {
+                return tiles[y][x].getPiece();
             }
         }
     }
     if (newX - oldX > 0 && newY - oldY > 0) {
         for (int y = oldY + 1, x = oldX + 1; y < newY && x < newX; x++, y++) {
-            if (boardFields[y][x].hasPiece()) {
-                return boardFields[y][x].getPiece();
+            if (tiles[y][x].hasPiece()) {
+                return tiles[y][x].getPiece();
             }
         }
     }

@@ -11,8 +11,8 @@ include_directories(MoveStatus)
 add_executable(checkers
         Board/Board.cpp
         Board/Board.h
-        Figures/Normal.cpp
-        Figures/Normal.h
+        Figures/Checker.cpp
+        Figures/Checker.h
         Figures/Queen.cpp
         Figures/Queen.h
         Pieces/Piece.cpp

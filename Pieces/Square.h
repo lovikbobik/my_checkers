@@ -10,7 +10,7 @@ public:
 
     void setPiece(Piece *piece);
 
-    Piece *const getPiece() const;
+    Piece *getPiece() const;
 
     bool hasPiece();
 private:

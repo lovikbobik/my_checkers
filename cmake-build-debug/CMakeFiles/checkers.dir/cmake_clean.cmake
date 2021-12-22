@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/checkers.dir/Board/Board.cpp.obj"
-  "CMakeFiles/checkers.dir/Figures/Normal.cpp.obj"
+  "CMakeFiles/checkers.dir/Figures/Checker.cpp.obj"
   "CMakeFiles/checkers.dir/Figures/Queen.cpp.obj"
   "CMakeFiles/checkers.dir/MoveStatus/MoveStatus.cpp.obj"
   "CMakeFiles/checkers.dir/Pieces/Piece.cpp.obj"
@@ -8,8 +8,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/checkers.dir/main.cpp.obj"
   "checkers.exe"
   "checkers.exe.manifest"
+  "checkers.lib"
   "checkers.pdb"
-  "libcheckers.dll.a"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -16,7 +16,7 @@ class Piece {
 public:
     Piece(int y, int x, Color color);
 
-    virtual ~Piece() {};
+    virtual ~Piece() = default;
 
     int getColor() const;
 
@@ -26,17 +26,17 @@ public:
 
     void setY(int y);
 
-    int get_Y() const;
+    int getY() const;
 
-    int get_X() const;
+    int getX() const;
 
     virtual MoveStatus move(std::vector<std::vector<Square>>, int, int) = 0;
 
     virtual void print() = 0;
 
 private:
-    int x;
-    int y;
-    Color color;
+    int _x;
+    int _y;
+    Color _color;
 };
 
